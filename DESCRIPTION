@@ -1,5 +1,5 @@
-Package: P1
-Title: Custom package for themes, templates and some functions
+Package: Pabloverse
+Title: Pabloverse Custom package for themes, templates and some functions
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Jose Pablo",
