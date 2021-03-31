@@ -1,0 +1,11 @@
+---
+title: "Title"
+author: "Pablo Gomez"
+date: "The Date"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = F, message = F)
+library(dplyr); library(ggplot2)
+```
+
