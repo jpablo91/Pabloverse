@@ -1,7 +1,8 @@
 ---
 title: "Title"
 author: "Pablo Gomez"
-date: "The Date"
+date: "`r Sys.Date()`"
+toc: true
 ---
 
 ```{r setup, include=FALSE}
