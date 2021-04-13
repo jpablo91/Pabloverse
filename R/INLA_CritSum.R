@@ -8,5 +8,5 @@ INLA_CritSum <- function(x) {
                   WAIC = x$waic[1], 
                   CPO = -sum(log(x$cpo$cpo)), 
                   MLIK = x$mlik[1])
-  retur(d)
+  return(d)
 }
