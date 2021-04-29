@@ -8,6 +8,6 @@ INLA_CPOplot <- function(m){
     tidyr::gather(type, value, CPO,PIT) %>% 
     ggplot() +
     geom_point(aes(Observation, y = value), alpha = 0.7) +
-    facet_wrap(~type)
+    facet_wrap(~type, scales = 'free')
   return(d)
 }

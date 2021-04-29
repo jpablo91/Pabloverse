@@ -2,4 +2,6 @@
 
 export(INLA_CPOplot)
 export(INLA_CritSum)
+export(LocalMI.MC)
+export(MI.CO)
 export(Theme1)
