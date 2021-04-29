@@ -7,7 +7,7 @@
 
 LocalMI.MC <- function(Data, N_simulations, wl){
   # Data = x$total; wl = wl; N_simulations = 100
-  MI.Test <- localmoran(Data, wl) %>% 
+  MI.Test <- spdep::localmoran(Data, wl) %>% 
     data.frame()
   I <- MI.Test$Ii
   n <- length(Data)
@@ -21,7 +21,7 @@ LocalMI.MC <- function(Data, N_simulations, wl){
     # Assign the sampled values randomly to other features:
     DataS <- Data[S]
     # Run a Moran's I for the generated data:
-    Iij <- localmoran(DataS, wl)[,1]
+    Iij <- spdep::localmoran(DataS, wl)[,1]
     # Add a row for each I calculated for the simulated data
     Ii <- rbind(Ii, Iij)
   }

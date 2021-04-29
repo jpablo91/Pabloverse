@@ -7,16 +7,16 @@
 
 MI.CO <- function(x, var, nsim = 1000){
   # Get adjacency mat
-  wl <- poly2nb(x, queen = T) %>%
-    nb2listw(., style = "B")
+  wl <- spdep::poly2nb(x, queen = T) %>%
+    spdep::nb2listw(., style = "B")
   # Create lag and standardize variable
   x <- x %>%
-    mutate(sVar = scale(eval(parse(text = var))), # Standardize the variable
+    dplyr::mutate(sVar = scale(eval(parse(text = var))), # Standardize the variable
            lag = lag.listw(wl, eval(parse(text = var))), # create a lagged variable
            slag = lag.listw(wl, sVar)) # Should the lagged variable be standardized ??
   
   x <- x %>% 
-    mutate(pval = Local.MI.MC(Data = eval(parse(text = var)), N_simulations = nsim, wl = wl),
+    dplyr::mutate(pval = Local.MI.MC(Data = eval(parse(text = var)), N_simulations = nsim, wl = wl),
            COType = ifelse((sVar >= 0 & slag >= 0) & pval <= 0.05, 'HH', NA),
            COType = ifelse((sVar <= 0 & slag <= 0) & pval <= 0.05, 'LL', COType),
            COType = ifelse((sVar >= 0 & slag <= 0) & pval <= 0.05, 'HL', COType),
