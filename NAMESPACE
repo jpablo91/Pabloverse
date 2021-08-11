@@ -11,11 +11,17 @@ export(INLA_CritSum)
 export(LocalMI.MC)
 export(MI.CO)
 export(NA.count)
+<<<<<<< HEAD
 export(RFCART)
+=======
+>>>>>>> dc8e325f87fcb31924e4615f0946e9ffd5d9ee59
 export(Theme1)
 export(UniMozaic)
 export(UniV.Tbl)
 export(WilcoxTbl)
 export(clean_units)
+<<<<<<< HEAD
 export(simplify8)
+=======
+>>>>>>> dc8e325f87fcb31924e4615f0946e9ffd5d9ee59
 export(sptest)
