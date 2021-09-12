@@ -1,6 +1,6 @@
-library(shiny); library(shinythemes)
-library(dplyr)
-library(ggplot2)
+# library(shiny); library(shinythemes)
+# library(dplyr)
+# library(ggplot2)
 
 ######### LOAD DATA ########
 d <- data.frame(x = rnorm(100, 10, 1),
@@ -24,6 +24,9 @@ ui <- navbarPage("New Application Title",
                               ),
                               #### Here we can put the results/other UI #####
                               mainPanel(type = 'tabs',
+                                        # grafico de barras,
+                                        # descripcion,
+                                        # average calculado,
                                         tags$h4('Plot based on loaded data'),
                                         tabPanel('Plot', plotOutput('p1')),
                                         hr(),
