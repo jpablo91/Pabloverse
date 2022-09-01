@@ -7,7 +7,7 @@
 
 theme_print <- function(fill = NA, border = 'grey50'){
   if(is.na(fill)){
-    fill <- rainbow(n = 1, s = 0.3, v = 0.6, start = runif(1, 0.01, 0.99))
+    fill <- hCol(h = runif(1, 0.01, 0.99), b = 0.6, s = 0.3)
   }
   
   ggplot2::theme(plot.background = element_rect(fill = border),
