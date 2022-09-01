@@ -1,4 +1,5 @@
 #' Function for custom theme
+#' 
 #' @param fill color for the fill of the panel
 #' @param border color of the border
 #' @export
