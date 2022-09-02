@@ -5,16 +5,18 @@
 #' @export
 
 
-theme_print <- function(fill = NA, border = 'grey50'){
+theme_print <- function(fill = NA, border = 'grey50', textColor = 'grey90'){
   if(is.na(fill)){
     fill <- hCol(h = runif(1, 0.01, 0.99), b = 0.6, s = 0.3)
   }
   
   ggplot2::theme(plot.background = element_rect(fill = border),
+                 legend.background = element_rect(border),
                  panel.background = element_rect(fill = fill),
                  panel.border = element_blank(),
                  panel.grid = element_blank(),
                  axis.text = element_blank(),
+                 axis.title = element_text(colour = textColor),
                  axis.ticks = element_blank(), 
-                 plot.title = element_text(colour = 'grey90', face = 'bold.italic', size = 16, hjust = 0.5))
+                 plot.title = element_text(colour = textColor, face = 'bold.italic', size = 16, hjust = 0.5))
 }
