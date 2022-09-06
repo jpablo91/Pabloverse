@@ -4,7 +4,12 @@
 \alias{theme_print}
 \title{Function for custom theme}
 \usage{
-theme_print(fill = NA, border = "grey50", textColor = "grey90")
+theme_print(
+  fill = NA,
+  border = "grey50",
+  textColor = "grey90",
+  grid = "grey40"
+)
 }
 \arguments{
 \item{fill}{color for the fill of the panel}
