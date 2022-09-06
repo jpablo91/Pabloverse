@@ -15,6 +15,10 @@ theme_print(
 \item{fill}{color for the fill of the panel}
 
 \item{border}{color of the border}
+
+\item{textColor}{color of the plot text}
+
+\item{grid}{color of the grid, NA for no grid}
 }
 \description{
 Function for custom theme

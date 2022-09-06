@@ -2,6 +2,8 @@
 #' 
 #' @param fill color for the fill of the panel
 #' @param border color of the border
+#' @param textColor color of the plot text
+#' @param grid color of the grid, NA for no grid
 #' @export
 
 
@@ -22,5 +24,6 @@ theme_print <- function(fill = NA, border = 'grey50', textColor = 'grey90', grid
                  axis.title = element_text(colour = textColor),
                  axis.ticks = element_blank(), 
                  legend.text = element_text(colour = textColor),
+                 legend.title = element_text(colour = textColor),
                  plot.title = element_text(colour = textColor, face = 'bold.italic', size = 16, hjust = 0.5))
 }
