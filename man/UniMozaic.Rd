@@ -4,10 +4,10 @@
 \alias{UniMozaic}
 \title{Function to get a univariate mozaic plot}
 \usage{
-UniMozaic(Data, x, palette = "Set1")
+UniMozaic(data, x, palette = "Set1")
 }
 \arguments{
-\item{Data}{A data frame with the variables}
+\item{data}{A data frame with the variables}
 
 \item{x}{a string with the name of the variable}
 
