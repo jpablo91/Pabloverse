@@ -4,7 +4,15 @@
 \alias{plotChain}
 \title{Function to plot a MCMC chain from simulated data}
 \usage{
-plotChain(df, var, col = "black", lwd = 0.7)
+plotChain(
+  df,
+  var,
+  col = "black",
+  lwd = 0.7,
+  title = "",
+  x = "N simulations",
+  y = "x"
+)
 }
 \arguments{
 \item{df}{the data frame with the simulation outcomes}

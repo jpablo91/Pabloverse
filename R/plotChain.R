@@ -6,7 +6,7 @@
 #' @param lwd line width for the plot
 #' @export
 
-plotChain <- function(df, var, col = 'black', lwd = 0.7){
+plotChain <- function(df, var, col = 'black', lwd = 0.7, title = '', x = 'N simulations', y = 'x'){
   # df = s$Cum; var = 'TotalInfected'
   d <- sapply(1:nrow(df), function(x){
     df %>% 
@@ -19,5 +19,6 @@ plotChain <- function(df, var, col = 'black', lwd = 0.7){
     ggplot() +
     geom_line(aes(x = n, y = x), col = col, lwd = lwd) +
     geom_hline(yintercept = tail(d, 1) %>% pull(x), col = 'red3', lty = 2) +
-    theme_minimal()
+    theme_minimal() +
+    labs(title = title, x = x, y = y)
 }
