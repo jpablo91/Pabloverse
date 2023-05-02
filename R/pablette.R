@@ -18,7 +18,8 @@ pablette <- function(n, pal, type = 'cat'){
     mx = c('#006341', '#FFFFFF', '#C8102E'),
     ecu = c('#FFD100', '#0072CE', '#EF3340'),
     ban = c('#F42A41', '#006A4E'),
-    tt = c('#C8102E', '#000000', '#FFFFFF')
+    tt = c('#C8102E', '#000000', '#FFFFFF'),
+    hamza = c("#FF8AC6", 'grey95', "grey50", "grey20", "#D1D160")
   )
   
   if(length(pal) == 1){
