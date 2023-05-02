@@ -1,7 +1,7 @@
 #' Function to get a color palette
 #' 
 #' @param n number of colors to get
-#' @param pal palette used, this can be either a vector of colors or a predefined palette
+#' @param pal palette used, this can be either a vector of colors or a predefined palette, options include: 'ca', 'fett', 'glacier', 'hamza', 'retro', 'calico', 'tr808', 'linn'
 #' @param type type of palette, only 'cat' is implemented
 #' @export
 
@@ -19,7 +19,9 @@ pablette <- function(n, pal, type = 'cat'){
     ecu = c('#FFD100', '#0072CE', '#EF3340'),
     ban = c('#F42A41', '#006A4E'),
     tt = c('#C8102E', '#000000', '#FFFFFF'),
-    hamza = c("#FF8AC6", 'grey95', "grey50", "grey20", "#D1D160")
+    hamza = c("#FF8AC6", 'grey95', "grey50", "grey20", "#D1D160"),
+    calico = c('#ffffff', '#000000', '#eb9414', '#ff7a00'),
+    retro = c('#666547', '#fb2e01', '#6fcb9f', '#ffe28a', '#fffeb3')
   )
   
   if(length(pal) == 1){
