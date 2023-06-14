@@ -3,6 +3,7 @@
 #' @param x string of text to count
 #' @export
 #' 
+#' 
 wordCount <- function(x){
   length(strsplit(x, ' ')[[1]])
 }
