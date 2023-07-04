@@ -7,3 +7,13 @@
 #' @format A data frame with seven variables: \code{County}, \code{Date},
 #'   \code{Year}, \code{LaborForce}, \code{Employment}, \code{Unemployment} and \code{UnemploymentRate} 
 "LAUS_CA"
+
+#' UFO Sightings in North america 
+#'
+#' Data regarding UFO reports in Canada, Mexico and US
+#' 
+#' Source: https://nuforc.org
+#'
+#' @format A data frame with seven variables: \code{County}, \code{Date},
+#'   \code{country}, \code{city}, \code{state}, \code{date} and \code{month} 
+"NA_ufos"
