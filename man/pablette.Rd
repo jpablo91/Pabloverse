@@ -9,7 +9,7 @@ pablette(n, pal, type = "cat")
 \arguments{
 \item{n}{number of colors to get}
 
-\item{pal}{palette used, this can be either a vector of colors or a predefined palette, options include: 'ca', 'fett', 'glacier', 'hamza', 'retro', 'calico', 'tr808', 'linn'}
+\item{pal}{palette used, this can be either a vector of colors or a predefined palette, options include: 'ca', 'paperplane', 'lot', 'illumination' 'fett', 'glacier', 'hamza', 'retro', 'calico', 'tr808', 'linn', 'endor', 'tatooine'}
 
 \item{type}{type of palette, only 'cat' is implemented}
 }
