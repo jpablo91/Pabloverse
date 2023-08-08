@@ -24,7 +24,7 @@ fishers <- function(data, x, y, offset = 0.01, outcome = 'figure', pal = c('orch
   
   # Make a figure ------------
   p <- ggplot() +
-    ggmosaic::geom_mosaic(data = d, aes(x=product(x, y),fill = y), offset = offset) +
+    ggmosaic::geom_mosaic(data = d, aes(x=ggmosaic::product(x, y),fill = y), offset = offset) +
     scale_fill_manual(values = Pabloverse::pablette(ncol, pal = pal)) +
     labs(title = paste0(y, ' ~ ', x), subtitle = paste0('Estiamte: ', Estimate, '(', CI, ')', '\n p-value: ', Pval),
          x = x, y = y, fill = y) +
