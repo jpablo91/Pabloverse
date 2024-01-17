@@ -2,7 +2,7 @@
 #' 
 #' @param data a dataset where each row will have a coordinate in a 2d plane assigned
 #' @param w Name of the variable used to generate the coordinates
-#' @param order
+#' @param order order of the arrangement
 #' @export
 #' 
 grid_coords <- function(data, w, order = "ordered"){

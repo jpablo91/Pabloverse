@@ -10,6 +10,8 @@ grid_coords(data, w, order = "ordered")
 \item{data}{a dataset where each row will have a coordinate in a 2d plane assigned}
 
 \item{w}{Name of the variable used to generate the coordinates}
+
+\item{order}{order of the arrangement}
 }
 \description{
 Function to generate coordinates in a 2D grid
