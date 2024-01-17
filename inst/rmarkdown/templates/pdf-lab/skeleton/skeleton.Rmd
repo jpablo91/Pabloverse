@@ -1,0 +1,23 @@
+---
+title: "pdf lab"
+author: "Pablo Gomez"
+output: pdf_document
+---
+
+# Objectives
+
+\begin{center}
+\begin{tcolorbox}[colback=white,colframe=black,boxrule=0.5pt,width=1.0\textwidth]
+*Add here the objectives for the lab*
+\end{tcolorbox}
+\end{center}
+
+# Instructions
+
+# Questions
+
+\begin{center}
+\begin{tcolorbox}[colback=white,colframe=black,boxrule=0.5pt,width=1.0\textwidth]
+*Add here the due date*
+\end{tcolorbox}
+\end{center}
