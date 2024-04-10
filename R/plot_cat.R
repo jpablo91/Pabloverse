@@ -17,7 +17,8 @@ plot_cat <- function(x, data, col = "red4", main = NULL, stratified = F, st, n_s
       count({{x}}, {{st}}) %>%
       group_by({{st}}) %>% 
       mutate(p = round(100 * n/sum(n), 2)) %>% 
-      ggplot(aes(x = p, y = ifelse(n_sort, reorder({{x}}, p), {{x}}))) +
+      # ggplot(aes(x = p, y = ifelse(n_sort, reorder({{x}}, p), {{x}}))) +
+      ggplot(aes(x = p, y = reorder({{x}}, p))) +
       geom_bar(aes(fill = {{st}}), stat = "identity", position = "dodge", colour = "black") +
       geom_label(aes(label = paste(p, "%"), col = {{st}}), alpha = 0.8, size = 3) +
       labs(title = l, y = ylab, x = xlab) +
@@ -28,7 +29,8 @@ plot_cat <- function(x, data, col = "red4", main = NULL, stratified = F, st, n_s
     p <- data %>% 
       count({{x}}) %>%
       mutate(p = round(100 * n/sum(n), 2)) %>% 
-      ggplot(aes(x = p, y = ifelse(n_sort, reorder({{x}}, p), {{x}}))) +
+      # ggplot(aes(x = p, y = ifelse(n_sort, reorder({{x}}, p), {{x}}))) +
+      ggplot(aes(x = p, y = reorder({{x}}, p))) +
       geom_bar(stat = "identity", position = "dodge", fill = col, colour = "black") +
       geom_label(aes(label = paste(p, "%")), alpha = 0.8, size = 3) +
       labs(title = l, y = ylab, x = xlab) +
