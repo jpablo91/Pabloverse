@@ -4,7 +4,17 @@
 \alias{plot_cat}
 \title{Function to get the shappiro test p value}
 \usage{
-plot_cat(x, data, col = "red4", main = NULL, stratified = F, st)
+plot_cat(
+  x,
+  data,
+  col = "red4",
+  main = NULL,
+  stratified = F,
+  st,
+  n_sort = F,
+  xlab = "",
+  ylab = ""
+)
 }
 \arguments{
 \item{x}{name of the variable}
